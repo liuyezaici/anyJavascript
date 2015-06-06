@@ -1,0 +1,2 @@
+# anyJavascript
+javascript中的各种问题以及奇技淫巧
