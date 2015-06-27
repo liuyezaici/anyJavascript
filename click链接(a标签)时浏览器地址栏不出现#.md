@@ -36,12 +36,11 @@ a href=#与 a href=javascript:void(0) 的区别 链接的几种办法
 <div onclick>等     
 
 例子：
-         <script>
-         function openWin()
-         {
-             console.log('Click me!');
-         }
-        </script>
 
-<a href="javascript:void(0)" onclick="openWin()">北京</a>
-<a href="#" onclick="openWin()">#北京#</a>
+`function openWin(){
+   console.log('Click me!');
+}`  
+`<a href="javascript:void(0)" onclick="openWin()">北京</a>`  
+`<a href="#" onclick="openWin()">#北京#</a>`
+
+可以将上面的代码放入一个html页面，分别点击两个链接看下浏览器地址栏情况，第一个浏览器地址栏没有加入任何东西，第二个地址栏加入了#。
