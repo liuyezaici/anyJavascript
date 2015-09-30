@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var two = "two";
+        function hi(){
+            this.two = "three";
+        }
+        var foo = hi();
+        console.log(two);
+        //result:three
+        //two变量首先是在全局作用域定义的,也就是window.two = "two",hi()执行时,调用其的对象是window,其this指向了window,所以改变了它的值
+    </script>
+</head>
+<body>
+
+</body>
+</html>
